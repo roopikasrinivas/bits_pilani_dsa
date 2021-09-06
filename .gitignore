@@ -1,2 +1,4 @@
 # Project exclude paths
 /out/
+/.idea
+/bits_sem2_dsalgo.iml
