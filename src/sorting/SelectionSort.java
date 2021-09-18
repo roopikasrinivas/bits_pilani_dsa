@@ -1,5 +1,7 @@
 package sorting;
 
+import util.PrintArray;
+
 public class SelectionSort {
 
     public static void selectionSort(int[] A){
@@ -12,6 +14,8 @@ public class SelectionSort {
                 }
             }
             swap(A, n-i, currentMaxIndex);
+            System.out.println("Array after pass " + i);
+            PrintArray.printArray(A);
         }
     }
 
@@ -23,9 +27,10 @@ public class SelectionSort {
 
     public static void main(String[] args) {
         int[] A = {7,5,4,3,2,1};
+        System.out.println("Array before selection sort");
+        PrintArray.printArray(A);
         selectionSort(A);
-        for(int a : A){
-            System.out.println(a);
-        }
+        System.out.println("\nArray after selection sort");
+        PrintArray.printArray(A);
     }
 }

@@ -1,8 +1,10 @@
 package sorting;
 
+import util.PrintArray;
+
 public class SelectionSortOptimized {
 
-    public static void selectionSort(int[] A){
+    public static void selectionSortOptimized(int[] A){
         int n = A.length;
         for(int i=1; i<n; i++){
             int inversions = 0;
@@ -12,7 +14,6 @@ public class SelectionSortOptimized {
                 }
             }
             if(inversions == 0) break;
-            System.out.println("Pass: "+i);
             int currentMaxIndex = 0;
             for(int j=1; j<=n-i; j++){
                 if(A[j] > A[currentMaxIndex]){
@@ -20,6 +21,8 @@ public class SelectionSortOptimized {
                 }
             }
             swap(A, n-i, currentMaxIndex);
+            System.out.println("Array after pass " + i);
+            PrintArray.printArray(A);
         }
     }
 
@@ -31,9 +34,10 @@ public class SelectionSortOptimized {
 
     public static void main(String[] args) {
         int[] A = {7,5,4,3,2,1};
-        selectionSort(A);
-        for(int a : A){
-            System.out.println(a);
-        }
+        System.out.println("Array before selection sort");
+        PrintArray.printArray(A);
+        selectionSortOptimized(A);
+        System.out.println("\nArray after selection sort");
+        PrintArray.printArray(A);
     }
 }

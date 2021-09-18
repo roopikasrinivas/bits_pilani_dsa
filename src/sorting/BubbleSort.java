@@ -1,5 +1,8 @@
 package sorting;
 
+import util.PrintArray;
+import util.SwapArray;
+
 public class BubbleSort {
 
     public static void bubbleSort(int[] A){
@@ -7,30 +10,21 @@ public class BubbleSort {
         for(int i=1; i<n; i++){
             for(int j=0; j<n-1; j++){
                 if(A[j] > A[j+1]){
-                    swap(A, j, j+1);
+                    SwapArray.swap(A, j, j+1);
                 }
             }
-        }
-    }
 
-    public static void swap(int[] A, int i, int j){
-        int temp = A[i];
-        A[i] = A[j];
-        A[j] = temp;
-    }
-
-    public static void printArray(int[] A){
-        for(int a : A){
-            System.out.print(a+" ");
+            System.out.println("Array after pass " + i);
+            PrintArray.printArray(A);
         }
     }
 
     public static void main(String[] args) {
         int[] A = {7,5,4,3,2,1};
         System.out.println("Array before bubble sort");
-        printArray(A);
+        PrintArray.printArray(A);
         bubbleSort(A);
         System.out.println("\nArray after bubble sort");
-        printArray(A);
+        PrintArray.printArray(A);
     }
 }
