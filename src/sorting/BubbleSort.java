@@ -13,7 +13,6 @@ public class BubbleSort {
                     SwapArray.swap(A, j, j+1);
                 }
             }
-
             System.out.println("Array after pass " + i);
             PrintArray.printArray(A);
         }
