@@ -1,7 +1,7 @@
 package sorting;
 
 import util.PrintArray;
-import util.SwapArray;
+import util.ArrayElements;
 
 public class BubbleSortOptimized {
 
@@ -11,7 +11,7 @@ public class BubbleSortOptimized {
             int swaps = 0;
             for(int j=0; j<n-1; j++){
                 if(A[j] > A[j+1]){
-                    SwapArray.swap(A, j, j+1);
+                    ArrayElements.swap(A, j, j+1);
                     swaps++;
                 }
             }
@@ -24,10 +24,10 @@ public class BubbleSortOptimized {
 
     public static void main(String[] args) {
         int[] A = {4,5,3,9,1,12};
-        System.out.println("Array before bubble sort");
+        System.out.println("Array before optimized bubble sort");
         PrintArray.printArray(A);
         bubbleSortOptimized(A);
-        System.out.println("\nArray after bubble sort");
+        System.out.println("\nArray after optimized bubble sort");
         PrintArray.printArray(A);
     }
 }

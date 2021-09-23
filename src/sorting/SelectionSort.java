@@ -1,6 +1,7 @@
 package sorting;
 
 import util.PrintArray;
+import util.ArrayElements;
 
 public class SelectionSort {
 
@@ -13,16 +14,10 @@ public class SelectionSort {
                     currentMaxIndex = j;
                 }
             }
-            swap(A, n-i, currentMaxIndex);
+            ArrayElements.swap(A, n-i, currentMaxIndex);
             System.out.println("Array after pass " + i);
             PrintArray.printArray(A);
         }
-    }
-
-    public static void swap(int[] A, int i, int j){
-        int temp = A[i];
-        A[i] = A[j];
-        A[j] = temp;
     }
 
     public static void main(String[] args) {

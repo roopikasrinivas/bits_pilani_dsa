@@ -1,7 +1,7 @@
 package sorting;
 
 import util.PrintArray;
-import util.SwapArray;
+import util.ArrayElements;
 
 public class BubbleSort {
 
@@ -10,7 +10,7 @@ public class BubbleSort {
         for(int i=1; i<n; i++){
             for(int j=0; j<n-1; j++){
                 if(A[j] > A[j+1]){
-                    SwapArray.swap(A, j, j+1);
+                    ArrayElements.swap(A, j, j+1);
                 }
             }
             System.out.println("Array after pass " + i);

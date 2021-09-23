@@ -1,6 +1,6 @@
 package util;
 
-public class SwapArray {
+public class ArrayElements {
 
     public static void swap(int[] A, int i, int j){
         int temp = A[i];

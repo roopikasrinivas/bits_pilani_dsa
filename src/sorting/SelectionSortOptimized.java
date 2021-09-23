@@ -1,6 +1,7 @@
 package sorting;
 
 import util.PrintArray;
+import util.ArrayElements;
 
 public class SelectionSortOptimized {
 
@@ -20,24 +21,18 @@ public class SelectionSortOptimized {
                     currentMaxIndex = j;
                 }
             }
-            swap(A, n-i, currentMaxIndex);
+            ArrayElements.swap(A, n-i, currentMaxIndex);
             System.out.println("Array after pass " + i);
             PrintArray.printArray(A);
         }
     }
 
-    public static void swap(int[] A, int i, int j){
-        int temp = A[i];
-        A[i] = A[j];
-        A[j] = temp;
-    }
-
     public static void main(String[] args) {
         int[] A = {7,5,4,3,2,1};
-        System.out.println("Array before selection sort");
+        System.out.println("Array before optimized selection sort");
         PrintArray.printArray(A);
         selectionSortOptimized(A);
-        System.out.println("\nArray after selection sort");
+        System.out.println("\nArray after optimized selection sort");
         PrintArray.printArray(A);
     }
 }
