@@ -1,2 +1,23 @@
-# bits_sem2_dsalgo
-Data Structures and Algorithms - BITS Pilani
+## Data Structures and Algorithms - BITS Pilani
+Source code for all algorithms covered in BITS Pilani MTech - Data Structures and Algorithms course
+
+###Sorting
+1. [Bubble Sort](https://github.com/roopikasrinivas/bits_pilani_dsa/blob/master/src/sorting/BubbleSort.java)
+2. [Bubble Sort Optimized](https://github.com/roopikasrinivas/bits_pilani_dsa/blob/master/src/sorting/BubbleSortOptimized.java)
+3. [Selection Sort](https://github.com/roopikasrinivas/bits_pilani_dsa/blob/master/src/sorting/SelectionSort.java)
+4. [Selection Sort Optimized](https://github.com/roopikasrinivas/bits_pilani_dsa/blob/master/src/sorting/SelectionSortOptimized.java)
+5. [Insertion Sort](https://github.com/roopikasrinivas/bits_pilani_dsa/blob/master/src/sorting/InsertionSort.java)
+6. [Insertion Sort Optimized](https://github.com/roopikasrinivas/bits_pilani_dsa/blob/master/src/sorting/InsertionSortOptimized.java)
+7. [Merge Sort](https://github.com/roopikasrinivas/bits_pilani_dsa/blob/master/src/sorting/MergeSort.java)
+8. [Quick Sort](https://github.com/roopikasrinivas/bits_pilani_dsa/blob/master/src/sorting/QuickSort.java)
+9. Count Sort (to be added)
+
+### Searching
+1. [Linear Search](https://github.com/roopikasrinivas/bits_pilani_dsa/blob/master/src/searching/LinearSearch.java)
+2. [Binary Search](https://github.com/roopikasrinivas/bits_pilani_dsa/blob/master/src/searching/BinarySearch.java)
+
+###Coming soon
+1. Count Sort
+2. Array Min, Max 
+3. Recursive Max
+
