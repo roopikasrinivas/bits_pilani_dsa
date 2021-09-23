@@ -4,6 +4,7 @@ import util.PrintArray;
 
 public class InsertionSort {
 
+    //    Worst case complexity = O(n^2) Best case complexity = O(n)
     public static void insertionSort(int[] A) {
         int n = A.length;
         int i, key, j;
@@ -11,13 +12,10 @@ public class InsertionSort {
             key = A[i];
             j = i - 1;
 
-        /* Move elements of arr[0..i-1], that are
-        greater than key, to one position ahead
-        of their current position */
-            System.out.println("Pass:" +i);
+            System.out.println("Pass:" + i);
             while (j >= 0 && A[j] > key) {
                 A[j + 1] = A[j];
-                j = j - 1;
+                j--;
                 PrintArray.printArray(A);
             }
             A[j + 1] = key;
@@ -34,21 +32,21 @@ public class InsertionSort {
                 j--;
                 if (j < 0) break;
             }
+            System.out.println("Pass:" + i);
             key = A[i];
             k = i - 1;
             while (k >= j + 1) {
                 A[k + 1] = A[k];
                 k--;
+                PrintArray.printArray(A);
             }
             A[j + 1] = key;
-
-            System.out.println("Array after pass " + i);
             PrintArray.printArray(A);
         }
     }
 
     public static void main(String[] args) {
-        int[] A = {3,9,4,1,8,6};
+        int[] A = {3, 9, 4, 1, 8, 6};
         System.out.println("Array before insertion sort");
         PrintArray.printArray(A);
         insertionSort(A);
