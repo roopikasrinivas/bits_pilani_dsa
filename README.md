@@ -10,14 +10,10 @@ Source code for all algorithms covered in BITS Pilani MTech - Data Structures an
 6. [Insertion Sort Optimized](https://github.com/roopikasrinivas/bits_pilani_dsa/blob/master/src/sorting/InsertionSortOptimized.java)
 7. [Merge Sort](https://github.com/roopikasrinivas/bits_pilani_dsa/blob/master/src/sorting/MergeSort.java)
 8. [Quick Sort](https://github.com/roopikasrinivas/bits_pilani_dsa/blob/master/src/sorting/QuickSort.java)
-9. Count Sort (to be added)
+9. [Count Sort](https://github.com/roopikasrinivas/bits_pilani_dsa/blob/master/src/sorting/CountSort.java)
 
 ### Searching
 1. [Linear Search](https://github.com/roopikasrinivas/bits_pilani_dsa/blob/master/src/searching/LinearSearch.java)
 2. [Binary Search](https://github.com/roopikasrinivas/bits_pilani_dsa/blob/master/src/searching/BinarySearch.java)
 
-### Coming soon
-1. Count Sort
-2. Array Min, Max 
-3. Recursive Max
 
