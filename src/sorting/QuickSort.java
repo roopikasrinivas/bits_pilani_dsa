@@ -5,8 +5,6 @@ import util.SwapArray;
 
 public class QuickSort {
 
-    private static int numberOfMerges=0;
-
     private static void quickSort(int[] A, int left, int right){
         if(left < right){
             int pivotIndex = partition(A, left, right);
