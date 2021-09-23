@@ -1,7 +1,7 @@
 ## Data Structures and Algorithms - BITS Pilani
 Source code for all algorithms covered in BITS Pilani MTech - Data Structures and Algorithms course
 
-###Sorting
+### Sorting
 1. [Bubble Sort](https://github.com/roopikasrinivas/bits_pilani_dsa/blob/master/src/sorting/BubbleSort.java)
 2. [Bubble Sort Optimized](https://github.com/roopikasrinivas/bits_pilani_dsa/blob/master/src/sorting/BubbleSortOptimized.java)
 3. [Selection Sort](https://github.com/roopikasrinivas/bits_pilani_dsa/blob/master/src/sorting/SelectionSort.java)
@@ -16,7 +16,7 @@ Source code for all algorithms covered in BITS Pilani MTech - Data Structures an
 1. [Linear Search](https://github.com/roopikasrinivas/bits_pilani_dsa/blob/master/src/searching/LinearSearch.java)
 2. [Binary Search](https://github.com/roopikasrinivas/bits_pilani_dsa/blob/master/src/searching/BinarySearch.java)
 
-###Coming soon
+### Coming soon
 1. Count Sort
 2. Array Min, Max 
 3. Recursive Max
