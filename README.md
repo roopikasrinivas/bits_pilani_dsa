@@ -16,4 +16,7 @@ Source code for all algorithms covered in BITS Pilani MTech - Data Structures an
 1. [Linear Search](https://github.com/roopikasrinivas/bits_pilani_dsa/blob/master/src/searching/LinearSearch.java)
 2. [Binary Search](https://github.com/roopikasrinivas/bits_pilani_dsa/blob/master/src/searching/BinarySearch.java)
 
+### Recursion
+1. [Factorial](https://github.com/roopikasrinivas/bits_pilani_dsa/blob/master/src/recursion/Factorial.java)
+2. [Recursive Max](https://github.com/roopikasrinivas/bits_pilani_dsa/blob/master/src/recursion/RecursiveMax.java)
 

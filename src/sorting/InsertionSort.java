@@ -46,7 +46,7 @@ public class InsertionSort {
     }
 
     public static void main(String[] args) {
-        int[] A = {3, 9, 4, 1, 8, 6};
+        int[] A = {31,41,59,26,41,58,};
         System.out.println("Array before insertion sort");
         PrintArray.printArray(A);
         insertionSort(A);
