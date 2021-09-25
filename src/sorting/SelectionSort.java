@@ -20,11 +20,27 @@ public class SelectionSort {
         }
     }
 
+    public static void selectionSortMin(int[] A){
+        int n = A.length;
+        for(int i=0; i<n-1; i++){
+
+            int currentMinIndex = i;
+            for(int j=i+1; j<n; j++){
+                if(A[j] < A[currentMinIndex]){
+                    currentMinIndex = j;
+                }
+            }
+            ArrayElements.swap(A, i, currentMinIndex);
+            System.out.println("Array after pass " + i);
+            PrintArray.printArray(A);
+        }
+    }
+
     public static void main(String[] args) {
-        int[] A = {7,5,4,3,2,1};
+        int[] A = {4,3,2,1,7,5};
         System.out.println("Array before selection sort");
         PrintArray.printArray(A);
-        selectionSort(A);
+        selectionSortMin(A);
         System.out.println("\nArray after selection sort");
         PrintArray.printArray(A);
     }

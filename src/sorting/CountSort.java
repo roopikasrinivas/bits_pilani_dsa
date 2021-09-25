@@ -5,8 +5,9 @@ import util.PrintArray;
 //O(n) + O(R) + O(n + R) = O(n+R) = O(max(n,R))
 public class CountSort {
 
-    public static void countSort(int[] A, int n, int R){
+    public static void countSort(int[] A, int n, int a, int b){
         //Initialize frequency array with 0's.
+        int R= b-a + 1;
         int[] frequencyArray = new int[R];
         for(int i=0; i<R; i++){
             frequencyArray[i] = 0;
@@ -14,7 +15,7 @@ public class CountSort {
 
         //Scan input array and increase the count of corresponding element in frequency array
         for(int i=0; i<n; i++){
-            int index = A[i];
+            int index = A[i] - a;
             frequencyArray[index] = frequencyArray[index] + 1;
         }
 
@@ -27,7 +28,7 @@ public class CountSort {
         for(int i=0; i<R; i++){
             int frequency = frequencyArray[i];
             for(int j=1; j<=frequency; j++){
-                sortedArray[k++] = i;
+                sortedArray[k++] = i + a;
             }
         }
 
@@ -36,10 +37,10 @@ public class CountSort {
     }
 
     public static void main(String[] args) {
-        int[] A = {6,1,8,3,7,2,3,9,7};
+        int[] A = {21,18,20,17,18,19,16,19,18,20,21,23,24,23,25};
         System.out.println("Array before count sort");
         PrintArray.printArray(A);
-        countSort(A, A.length, 10);
+        countSort(A, A.length, 16,25);
         System.out.println("\nArray after count sort");
         PrintArray.printArray(A);
     }
