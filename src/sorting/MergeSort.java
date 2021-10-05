@@ -37,7 +37,7 @@ public class MergeSort {
     }
 
     public static void main(String[] args) {
-        int[] A = {85, 24, 63, 45, 17, 31, 96, 50, 5};
+        int[] A = {86, 25, 72, 44, 13, 31, 99, 57};
         System.out.println("Array before merge sort");
         PrintArray.printArray(A);
         mergeSort(A, 0, A.length - 1);

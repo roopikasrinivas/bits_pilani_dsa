@@ -16,6 +16,7 @@ public class QuickSort {
     private static int partition(int[] A, int left, int right) {
         int pivotIndex = left;
         int pivot = A[right];
+        System.out.println("Pivot: "+ pivot);
         for (int i = left; i < right; i++) {
             if (A[i] < pivot) {
                 ArrayElements.swap(A, pivotIndex, i);
@@ -23,11 +24,12 @@ public class QuickSort {
             }
         }
         ArrayElements.swap(A, pivotIndex, right);
+        PrintArray.printArray(A);
         return pivotIndex;
     }
 
     public static void main(String[] args) {
-        int[] A = {85, 24, 63, 45, 17, 31, 96, 50, 5};
+        int[] A = {86, 25, 72, 44, 13, 31, 99, 57};
         System.out.println("Array before quick sort");
         PrintArray.printArray(A);
         quickSort(A, 0, A.length - 1);

@@ -5,7 +5,8 @@ import util.ArrayElements;
 
 public class SelectionSort {
 
-    public static void selectionSort(int[] A){
+    //in each pass, the max element in the current sub-array is chosen for swapping
+    public static void selectionSortMax(int[] A){
         int n = A.length;
         for(int i=1; i<n; i++){
             int currentMaxIndex = 0;
@@ -20,6 +21,7 @@ public class SelectionSort {
         }
     }
 
+    //in each pass, the minimum element in the current sub-array is chosen for swapping
     public static void selectionSortMin(int[] A){
         int n = A.length;
         for(int i=0; i<n-1; i++){
